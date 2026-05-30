@@ -68,7 +68,7 @@ async def translate_callback_handler(callback_query: CallbackQuery) -> None:
                 data = await response.json()
                 translated_text = data["responseData"]["translatedText"]
                 await callback_query.answer()
-                await callback_query.message.answer(f"Translated text: {translated_text}")
+                await callback_query.message.answer(f"Translated text:\n\n{translated_text}")
             else:
                 await callback_query.answer()
                 await callback_query.message.answer("Sorry, an error occurred while translating. Please try again later.")
