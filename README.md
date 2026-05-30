@@ -23,7 +23,7 @@ telegram-translator-bot/
 │   └── routes.py        # Command handlers and routing logic
 ├── middleware/
 │   └── rate_limit.py    # Rate limiting middleware (if implemented)
-├── bot.py              # Main bot file with dispatcher setup
+├── bot.py               # Main bot file with dispatcher setup
 └── requirements.txt     # Project dependencies
 ```
 
